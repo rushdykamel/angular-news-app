@@ -14,3 +14,9 @@ Then
 `ng serve`
 
 Then, navigate to your localhost `http://localhost:4200/`
+
+---
+
+## Screenshot
+![alt screenshot](https://github.com/rushdykamel/angular-news-app/blob/master/news-app.png?raw=true)
+
