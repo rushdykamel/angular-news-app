@@ -1,0 +1,79 @@
+@import url(../common/variables.less);
+
+nav {
+  display: flex;
+  background-color: #fff;
+  padding-left: 30px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  color: #fff;
+  height: 60px;
+  position: relative;
+
+  .logo {
+    color: @header-text-color;
+    border-right: 2px solid;
+    padding-right: 10px;
+    border-left: 2px solid;
+    padding-left: 10px;
+
+    a {
+      font-size: 18px;
+      color: inherit;
+      text-decoration: none;
+      letter-spacing: 5px;
+    }
+  }
+
+  ul {
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding-left: 0;
+
+    li {
+     
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px;
+        background-color: #080808;
+        border-radius: 10px;
+        opacity: 0.6;
+
+        &:hover {
+          opacity: 1;
+          box-shadow: #ccc 2px 3px;
+        }
+        
+        &.active-link {
+          opacity: 1;
+          box-shadow: #ccc 2px 3px;
+        }
+      }
+    }
+  }
+
+  .fav-count {
+    position: absolute;
+    right: 15px;
+    font: 14px;
+    color: @header-text-color;
+    .count {
+      border-radius: 2px;     
+      padding: 1px 3px;
+      padding-bottom: 20px;
+      font-size: 12px;
+    }
+  }
+}

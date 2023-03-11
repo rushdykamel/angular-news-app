@@ -1,0 +1,11 @@
+<nav>
+  <div class="logo">
+    <a routerLink="/">
+      INSHORT NEWS
+    </a>
+  </div>
+  <ul>
+    <li *ngFor="let category of categories"><a routerLinkActive="active-link" routerLink="/category/{{category}}">{{category}}</a></li>
+  </ul>
+  <span class="fav-count"><fa-icon [icon]="favIcon"></fa-icon> <span class="count">{{favCount}}</span></span>
+</nav>

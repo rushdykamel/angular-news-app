@@ -1,0 +1,16 @@
+<article *ngIf="newsItem">
+  <h4>
+    <a [href]="newsItem.url" target="_blank"> {{newsItem.title}}</a>
+  </h4>
+  <h5>{{newsItem.date}} {{newsItem.time}}</h5>
+  <a [href]="newsItem.url" target="_blank">
+    <div class="image" [style.background-image]="'url(' + newsItem.imageUrl + ')'" [title]="newsItem.title"></div>
+  </a>
+  <p [trimContent]="trimLength" [originalModel]="newsItem.content"></p>
+  <a href="javascript:;" class="show-more" (click)="showMoreContent()">Show more</a> 
+  <h5>By: {{newsItem.author}}</h5>
+  <a class="reference" *ngIf="newsItem.readMoreUrl" [href]="newsItem.readMoreUrl" target="_blank">Sources</a>
+  <a href="javascript:;" class="favourite" (click)="toggleFavourite()" [class.active]="isFavourite">
+    <fa-icon [icon]="favIcon"></fa-icon>
+  </a>
+</article>

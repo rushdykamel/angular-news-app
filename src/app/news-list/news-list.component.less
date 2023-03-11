@@ -1,0 +1,43 @@
+@import url(../common/variables.less);
+
+h1 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @header-text-color;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+  align-items: stretch;
+  justify-content: center;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+app-news-item {
+  flex-basis: 300px;
+  display: flex;
+}
+
+a {
+  color: @header-text-color;
+  text-decoration: none;
+}
+
+.loading {
+  font-size: 45px;
+  color: #ccc;
+  margin-top: 50px;
+}
+
+p {
+  text-align: center;
+}

@@ -1,0 +1,6 @@
+<div class="container">
+  <div class="categories">
+      <a *ngFor="let category of categories" routerLink="/category/{{category}}">{{category}}</a>
+  </div>
+  <app-news-list category="all">  </app-news-list>
+</div>

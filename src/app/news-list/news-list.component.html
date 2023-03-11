@@ -1,0 +1,11 @@
+<ng-container *ngIf="!isLoading">
+  <h1>{{category}} News</h1>
+  <p><strong>Favourites:</strong> {{favCount}} <a href="javascript:;" (click)="toggleAllFavourite()">(Toggle all)</a></p>
+</ng-container>
+
+<div class="news-container">
+  <app-news-item *ngFor="let item of news" [newsItem]="item" (onFavourite)="onNewsFavouriteChanged($event)"></app-news-item>
+  <div class="loading" *ngIf="isLoading">
+    <fa-icon #icon [icon]="loadingIcon" [spin]="true"></fa-icon>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+    gap: 10px;
+    margin-top: 70px;
+    margin-left: 20px;
+    flex-shrink: 0;
+      
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: inline-block;
+      padding: 10px;
+      opacity: 0.6;
+      background: rgb(235, 8, 8);
+      border-radius: 3px;
+      transition: all 0.3s ease-in-out;
+      letter-spacing: 4px;
+      text-align: center;
+
+
+      &:hover {
+        opacity: 0.8;
+        box-shadow: #2a2727 1px 2px;
+      }
+    }
+  }
+
+
+  app-news-list {
+    flex-grow: 1;
+  }
+}
