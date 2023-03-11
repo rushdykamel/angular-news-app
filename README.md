@@ -1,5 +1,5 @@
 # angular-news-app
-Build news website using Angular and connecting to free APIs from https://github.com/cyberboysumanjay/Inshorts-News-API
+A news website built using Angular and free APIs from https://github.com/cyberboysumanjay/Inshorts-News-API
 
 Thanks to https://github.com/cyberboysumanjay for providing the news API.
 
