@@ -7,5 +7,10 @@ Thanks to https://github.com/cyberboysumanjay for providing the news API.
 
 ## How to run
 
-`npm install` use `--legacy-peer-deps` if needed
+`npm install` if needed use `--legacy-peer-deps`
+
+Then
+
 `ng serve`
+
+Then, navigate to your localhost `http://localhost:4200/`
